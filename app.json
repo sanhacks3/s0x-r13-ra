@@ -1,11 +1,10 @@
 {
  "name": "s0x-r13-ra",
- "scripts": {
-  "postdeploy": "echo s0x-base-postdeploy"
- },
- "env": {
-  "S0X_CANARY": {
-   "required": false
+ "environments": {
+  "test": {
+   "scripts": {
+    "test": "echo CTRLCI_${S0X_CI_CANARY}_RAN"
+   }
   }
  },
  "buildpacks": [
